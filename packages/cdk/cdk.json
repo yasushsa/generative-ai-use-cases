@@ -50,7 +50,7 @@
     ],
     "imageGenerationModelIds": [
       "amazon.nova-canvas-v1:0",
-    　"stability.sd3-large-v1:0",
+      "stability.sd3-large-v1:0",
       "stability.stable-image-core-v1:0",
       "stability.stable-image-ultra-v1:0"
     ],
@@ -58,7 +58,7 @@
     "endpointNames": [],
     "agentEnabled": true,
     "searchAgentEnabled": true,
-    "searchApiKey": "AIzaSyD5QfMRK9r8vgHEJtczKXW1vERwBLMILZw",
+    "searchApiKey": "",
     "agents": [
       {
         "displayName": "Search Engine",
