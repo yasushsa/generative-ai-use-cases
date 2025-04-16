@@ -19,6 +19,9 @@ const MODEL_VECTOR_MAPPING: { [key: string]: string } = {
   'amazon.titan-embed-text-v2:0': '1024',
   'cohere.embed-multilingual-v3': '1024',
   'cohere.embed-english-v3': '1024',
+  "us.anthropic.claude-3-7-sonnet-20250219-v1:0": '1024',
+  "anthropic.claude-3-sonnet-20240229-v1:0": '1024',
+  "us.anthropic.claude-3-5-sonnet-20241022-v2:0": '1024',
 };
 
 // The parsingConfiguration has a feature to read images, graphs, and tables embedded in PDF files.
