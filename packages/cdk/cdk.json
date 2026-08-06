@@ -45,6 +45,8 @@
     "modelIds": [
       "global.anthropic.claude-opus-5",
       "global.anthropic.claude-sonnet-5",
+      "global.anthropic.claude-fable-5",
+      "google.gemma-3-27b-it",
       "global.anthropic.claude-sonnet-4-6",
       "global.anthropic.claude-opus-4-8",
       "global.anthropic.claude-opus-4-7",
