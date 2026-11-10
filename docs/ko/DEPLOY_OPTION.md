@@ -860,11 +860,9 @@ VPC 모드를 사용할 때는 다음 매개변수를 설정하세요:
 - `agentCoreVpcId`: 사용할 VPC ID
 - `agentCoreSubnetIds`: 사용할 서브넷 ID 목록
 
-> [!NOTE]
-> `agentCoreVpcId`와 `agentCoreSubnetIds`를 모두 설정하면 AgentCore Runtime이 프라이빗 네트워크 모드로 배포됩니다. 둘 다 미설정(`null`)인 경우 퍼블릭 네트워크 모드로 배포됩니다.
+> [!NOTE] > `agentCoreVpcId`와 `agentCoreSubnetIds`를 모두 설정하면 AgentCore Runtime이 프라이빗 네트워크 모드로 배포됩니다. 둘 다 미설정(`null`)인 경우 퍼블릭 네트워크 모드로 배포됩니다.
 
-> [!IMPORTANT]
-> **가용 영역(AZ) 지원**: AgentCore Runtime은 리전별로 지원되는 AZ가 제한되어 있습니다. 서브넷은 반드시 지원되는 AZ 내에 배치해야 합니다. 자세한 내용은 [AWS 공식 문서](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-vpc.html#agentcore-supported-azs)를 확인하세요.
+> [!IMPORTANT] > **가용 영역(AZ) 지원**: AgentCore Runtime은 리전별로 지원되는 AZ가 제한되어 있습니다. 서브넷은 반드시 지원되는 AZ 내에 배치해야 합니다. 자세한 내용은 [AWS 공식 문서](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-vpc.html#agentcore-supported-azs)를 확인하세요.
 >
 > **인터넷 액세스**: AgentCore Runtime에서 MCP 서버 설치에는 인터넷 액세스가 필요합니다. 프라이빗 서브넷이 연결 대상인 경우 NAT Gateway 등 인터넷 도달 경로를 설정하세요.
 
@@ -933,7 +931,10 @@ const envs: Record<string, Partial<StackInput>> = {
 "anthropic.claude-3-opus-20240229-v1:0",
 "anthropic.claude-3-sonnet-20240229-v1:0",
 "anthropic.claude-3-haiku-20240307-v1:0",
+"global.anthropic.claude-opus-5-5",
 "global.anthropic.claude-opus-5",
+"global.anthropic.claude-haiku-5-5",
+"global.anthropic.claude-sonnet-5-5",
 "global.anthropic.claude-sonnet-4-20250514-v1:0",
 "us.anthropic.claude-opus-4-1-20250805-v1:0",
 "us.anthropic.claude-opus-4-20250514-v1:0",
@@ -1100,7 +1101,10 @@ const envs: Record<string, Partial<StackInput>> = {
 "anthropic.claude-3-opus-20240229-v1:0",
 "anthropic.claude-3-sonnet-20240229-v1:0",
 "anthropic.claude-3-haiku-20240307-v1:0",
+"global.anthropic.claude-opus-5-5",
 "global.anthropic.claude-opus-5",
+"global.anthropic.claude-haiku-5-5",
+"global.anthropic.claude-sonnet-5-5",
 "global.anthropic.claude-sonnet-4-20250514-v1:0",
 "us.anthropic.claude-opus-4-1-20250805-v1:0",
 "us.anthropic.claude-opus-4-20250514-v1:0",
